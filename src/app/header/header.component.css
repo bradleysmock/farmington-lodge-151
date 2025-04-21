@@ -1,0 +1,16 @@
+.header-wrapper {
+  display: flex;
+  margin: 0;
+  padding: 0 1rem;
+  max-width: 100%;
+  align-items: center;
+  justify-content: space-between;
+  color: var(--text);
+  height: var(--header-height);
+  z-index: 50;
+}
+
+h1.page-header {
+  font-size: 1.5rem;
+  margin: 0;
+}
