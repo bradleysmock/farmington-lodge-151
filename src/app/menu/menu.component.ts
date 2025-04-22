@@ -1,5 +1,5 @@
 import {Component, inject} from '@angular/core';
-import {AsyncPipe, NgClass, NgIf} from '@angular/common';
+import {AsyncPipe, NgIf} from '@angular/common';
 import {Store} from '@ngrx/store';
 import {AppState} from '../../store/state/app.state';
 import {getAppMenu} from '../../store/selectors/app.selectors';
@@ -8,8 +8,7 @@ import {getAppMenu} from '../../store/selectors/app.selectors';
   selector: 'app-menu',
   imports: [
     NgIf,
-    AsyncPipe,
-    NgClass
+    AsyncPipe
   ],
   templateUrl: './menu.component.html',
   styleUrl: './menu.component.css'

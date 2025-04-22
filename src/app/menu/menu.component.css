@@ -4,12 +4,19 @@
   text-align: right;
   cursor: pointer;
   display: block;
+  padding-bottom: 0;
+  transition: all 0.2s ease;
 }
 
-.menu-toggle > a {
+.menu-toggle a {
   display: block;
   padding: 1rem 1rem;
   cursor: pointer;
+  transition: color 0.2s ease;
+}
+
+.menu-toggle a:hover {
+  color: #007bff;
 }
 
 .menu {
@@ -19,8 +26,7 @@
   padding-top: 0.45rem;
   width: 100vw;
   min-height: calc(100vh - var(--header-height));
-  background: var(--gray-100);
-  background-clip: padding-box;
+  background-color: #ffffff;
 }
 
 

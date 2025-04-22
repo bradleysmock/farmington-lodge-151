@@ -1,0 +1,6 @@
+#welcome {
+  background-image: url("/background-logo.png");
+  height: var(--main-default-height);
+  width: 100vw;
+  background-position: center;
+}
