@@ -10,6 +10,18 @@
   },
   "menu": [
     {
+      "title": "History of Masonry and Masonry in Michigan",
+      "link": "/masonic-history"
+    },
+    {
+      "title": "History of Farmington Masonic Lodge",
+      "link": "/lodge-history"
+    },
+    {
+      "title": "Contact Farmington Lodge",
+      "link": "/contact"
+    },
+    {
       "title": "Grand Lodge",
       "link": "https://michiganmasons.org/"
     },
@@ -20,10 +32,6 @@
     {
       "title": "Grand View Registration",
       "link": "https://mi.grandview.systems/membership_registration"
-    },
-    {
-      "title": "Contact",
-      "link": "/contact"
     }
   ]
 }

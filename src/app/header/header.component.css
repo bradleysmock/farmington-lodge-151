@@ -5,9 +5,11 @@
   max-width: 100%;
   align-items: center;
   justify-content: space-between;
-  color: var(--text);
+  color: #ffffff;
   height: var(--header-height);
   z-index: 50;
+  background-color: rgba(26, 26, 26, 0.8);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h1.page-header {
