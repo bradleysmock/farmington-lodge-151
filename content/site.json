@@ -5,39 +5,97 @@
     "text": "We are neighbors from many backgrounds and faiths who meet to improve ourselves, support one another, and serve our community.",
     "photo": "/media/151Lodge.jpg"
   },
-  "truths": [
-    { "title": "Not a religion", "text": "Masons come from many faiths. We ask only that a man believe in a Supreme Being, as his own faith understands it. Religion is not debated in lodge." },
-    { "title": "Not political", "text": "Partisan politics stay outside the lodge room. Members hold every kind of view and meet as equals." },
-    { "title": "Not a secret society", "text": "Our ceremonies are private, but our members, our meeting place and our principles are public. You’re reading about them now." }
+  "visit": [
+    {
+      "label": "When",
+      "text": "Socializing before our monthly meeting. Second Monday, 6:30 pm."
+    },
+    {
+      "label": "What to wear",
+      "text": "Business casual is fine for dinner."
+    },
+    {
+      "label": "Who greets you",
+      "text": "A member will meet you at the door and sit with you."
+    },
+    {
+      "label": "Getting in",
+      "text": "Parking on site, including accessible spaces near the entrance."
+    }
   ],
-  "eligibility": [
-    { "text": "A man at least 18 years old" },
-    { "text": "Who believes in a Supreme Being" },
-    { "text": "Of good character and reputation" },
-    { "text": "Who comes of his own free will, not because someone talked him into it" }
+  "address": {
+    "street": "23715 Farmington Road",
+    "city": "Farmington, Michigan 48336"
+  },
+  "faq": [
+    {
+      "question": "Is Freemasonry a cult?",
+      "answer": "No. Members are free to leave at any time, we don’t recruit, and no one is asked to give up his faith, family or independent judgment. Masonry asks a man to be a better version of who he already is."
+    },
+    {
+      "question": "What does membership cost?",
+      "answer": "There is a one-time initiation fee and modest annual dues. We’ll go over it openly before you petition."
+    },
+    {
+      "question": "How much time does it take?",
+      "answer": "One regular meeting a month, plus degree work while you progress. Beyond that, you take part as much as your life allows."
+    },
+    {
+      "question": "Can I tell my family I’m a Mason?",
+      "answer": "Yes. Many Masons are proud to say so. What stays private are the ceremonies and modes of recognition, not your membership."
+    },
+    {
+      "question": "Do I need to know a Mason to join?",
+      "answer": "No. If you don’t know one, contact us and we’ll introduce you to some of the brethren."
+    }
   ],
   "community": [
-    { "title": "Founders Festival", "text": "You’ll find us at Farmington’s summer festival every year.", "photo": "" },
-    { "title": "Child ID Program", "text": "Free identification kits for local families.", "photo": "" },
-    { "title": "Scholarships", "text": "We support students from our community as they head to college.", "photo": "" },
-    { "title": "Fellowship", "text": "Picnics, dinners and movie nights, often with families along.", "photo": "" }
+    {
+      "title": "Founders Festival",
+      "text": "You’ll find us at Farmington’s summer festival every year."
+    },
+    {
+      "title": "Child ID Program",
+      "text": "Free identification kits for local families."
+    },
+    {
+      "title": "Scholarships",
+      "text": "We support students from our community as they head to college."
+    },
+    {
+      "title": "Fellowship",
+      "text": "Picnics, dinners and movie nights, often with families along."
+    }
   ],
-  "faq": [
-    { "question": "Is Freemasonry a cult?", "answer": "No. Members are free to leave at any time, we don’t recruit, and no one is asked to give up his faith, family or independent judgment. Masonry asks a man to be a better version of who he already is." },
-    { "question": "What does membership cost?", "answer": "There is a one-time initiation fee and modest annual dues. We’ll go over it openly before you petition." },
-    { "question": "How much time does it take?", "answer": "One regular meeting a month, plus degree work while you progress. Beyond that, you take part as much as your life allows." },
-    { "question": "Can I tell my family I’m a Mason?", "answer": "Yes. Many Masons are proud to say so. What stays private are the ceremonies and modes of recognition, not your membership." },
-    { "question": "Do I need to know a Mason to join?", "answer": "No. If you don’t know one, contact us and we’ll introduce you to some of the brethren." }
+  "eligibility": [
+    {
+      "text": "A man at least 18 years old"
+    },
+    {
+      "text": "Who believes in a Supreme Being"
+    },
+    {
+      "text": "Of good character and reputation"
+    },
+    {
+      "text": "Who comes of his own free will, not because someone talked him into it"
+    }
   ],
-  "visit": [
-    { "label": "When", "text": "Dinner before our monthly meeting. Second Tuesday, 6:00 pm." },
-    { "label": "What to wear", "text": "Business casual is fine for dinner." },
-    { "label": "Who greets you", "text": "A member will meet you at the door and sit with you." },
-    { "label": "Getting in", "text": "Parking on site, including accessible spaces near the entrance." }
+  "truths": [
+    {
+      "title": "Not a religion",
+      "text": "Masons come from many faiths. We ask only that a man believe in a Supreme Being, as his own faith understands it. Religion is not debated in lodge."
+    },
+    {
+      "title": "Not political",
+      "text": "Partisan politics stay outside the lodge room. Members hold every kind of view and meet as equals."
+    },
+    {
+      "title": "Not a secret society",
+      "text": "Our ceremonies are private, but our members, our meeting place and our principles are public. You’re reading about them now."
+    }
   ],
-  "address": { "street": "23715 Farmington Road", "city": "Farmington, Michigan 48336" },
   "contact": {
-    "endpoint": "",
     "privacy": "Your note goes only to the lodge secretary. We don’t share it or add you to any list."
   }
 }
