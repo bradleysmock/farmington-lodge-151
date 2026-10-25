@@ -96,6 +96,7 @@
     }
   ],
   "contact": {
-    "privacy": "Your note goes only to the lodge secretary. We don’t share it or add you to any list."
+    "privacy": "Your note goes only to the lodge secretary. We don’t share it or add you to any list.",
+    "access_key": ""
   }
 }

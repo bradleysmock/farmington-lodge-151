@@ -17,4 +17,4 @@
 1. Push this folder to a GitHub repo. In Settings → Pages, set Source to "GitHub Actions".
 2. Sign in at https://app.pagescms.org with GitHub and open the repo.
 3. Invite each editor as a collaborator (Settings → Collaborators). They need a free GitHub account.
-4. Optional: put a Formspree/Web3Forms URL in "Contact form → Form service URL".
+4. Contact form: get an access key at web3forms.com (sign up with the lodge's email) and paste it into "Contact form → Web3Forms access key".

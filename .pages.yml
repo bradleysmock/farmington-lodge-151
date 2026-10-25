@@ -67,5 +67,5 @@ content:
         label: Contact form
         type: object
         fields:
-          - { name: endpoint, label: Form service URL, description: "Set once by whoever manages the site. Leave alone otherwise.", type: string }
+          - { name: access_key, label: Web3Forms access key, description: "Set once by whoever manages the site. Leave alone otherwise.", type: string }
           - { name: privacy, label: Privacy note, type: text }

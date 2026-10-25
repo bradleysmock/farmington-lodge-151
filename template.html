@@ -271,7 +271,10 @@ footer a { color: var(--on-blue); }
         <p class="address">{{address.street}}<br>{{address.city}}</p>
       </div>
       <div id="contact">
-        <form id="inquiry" novalidate data-endpoint="{{contact.endpoint}}">
+        <form id="inquiry" novalidate data-endpoint="https://api.web3forms.com/submit">
+          <input type="hidden" name="access_key" value="{{contact.access_key}}">
+          <input type="hidden" name="subject" value="Membership inquiry from the Farmington Lodge No. 151 website">
+          <input type="hidden" name="from_name" value="Farmington Lodge No. 151 website">
           <h3 style="font-family:var(--display);font-weight:400;font-size:1.7rem">Ask About Membership</h3>
           <label for="f-name">Name<input id="f-name" name="name" autocomplete="name"></label>
           <label for="f-email">Email<input id="f-email" name="email" type="email" autocomplete="email"></label>
@@ -299,12 +302,13 @@ document.getElementById('inquiry').addEventListener('submit', async function (e)
   e.preventDefault();
   var f = e.target, status = document.getElementById('status'), url = f.dataset.endpoint;
   if (f.website.value) return;
-  if (!url) { status.textContent = 'This form isn’t connected yet, so nothing was sent.'; return; }
+  if (!f.access_key.value) { status.textContent = 'This form isn’t connected yet, so nothing was sent.'; return; }
   status.textContent = 'Sending…';
   try {
     var r = await fetch(url, { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(f) });
-    status.textContent = r.ok ? 'Thank you. A member of the lodge will be in touch.' : 'Something went wrong. Please try again.';
-    if (r.ok) f.reset();
+    var ok = r.ok && (await r.json()).success;
+    status.textContent = ok ? 'Thank you. A member of the lodge will be in touch.' : 'Something went wrong. Please try again.';
+    if (ok) f.reset();
   } catch (_) { status.textContent = 'Something went wrong. Please try again.'; }
 });
 </script>
