@@ -1,0 +1,312 @@
+<!doctype html><html><head><meta charset=utf8><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><style>:root{color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}html{scroll-padding-top:env(safe-area-inset-top,0px)}body{margin:0;padding:0;font:14px -apple-system,BlinkMacSystemFont,sans-serif;background:#faf9f5;color:#141413}img{max-width:100%}[hidden]:not([hidden=until-found i]){display:none!important}</style></head><body>
+<title>Farmington Lodge No. 151</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Libre+Caslon+Display&family=Source+Sans+3:wght@400;600;700&family=Libre+Caslon+Text:ital@0;1&display=swap">
+<style>
+/* Layout: a single guided journey — What is it? → Is it for me? → Who are we? → How do I ask? — with one persistent call to ask. */
+:root {
+  --blue: #1F3A68;        /* Craft blue: primary */
+  --blue-deep: #152a4d;
+  --ink: #1d2433;
+  --muted: #56607a;
+  --ground: #FAF7F0;      /* parchment */
+  --panel: #F1ECE0;
+  --line: #ddd5c4;
+  --gold: #A8843F;        /* restrained accent */
+  --on-blue: #F6F2E8;
+  --on-blue-muted: #c3cbe0;
+  --display: "Libre Caslon Display", "Libre Caslon Text", Georgia, "Times New Roman", serif;
+  --serif: "Libre Caslon Text", Georgia, serif;
+  --sans: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --blue: #7F9DD4; --blue-deep: #0f1c33; --ink: #E9E5DA; --muted: #A7AFC2;
+    --ground: #10151f; --panel: #171e2c; --line: #2a3346; --gold: #CFAE6A;
+    --on-blue: #F2EEE4; --on-blue-muted: #aab6d2; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --blue: #7F9DD4; --blue-deep: #0f1c33; --ink: #E9E5DA; --muted: #A7AFC2;
+  --ground: #10151f; --panel: #171e2c; --line: #2a3346; --gold: #CFAE6A;
+  --on-blue: #F2EEE4; --on-blue-muted: #aab6d2; color-scheme: dark;
+}
+
+* { box-sizing: border-box; }
+body { background: var(--ground); color: var(--ink); font-family: var(--sans); font-size: 18px; line-height: 1.6; }
+a { color: var(--blue); }
+:focus-visible { outline: 3px solid var(--gold); outline-offset: 2px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 400; line-height: 1.15; text-wrap: balance; margin: 0; }
+h2 { font-size: clamp(1.9rem, 4vw, 2.6rem); color: var(--ink); }
+h3 { font-family: var(--sans); font-weight: 700; font-size: 1.1rem; }
+p { margin: 0; }
+.wrap { max-width: 1080px; margin: 0 auto; padding-inline: 20px; }
+.eyebrow { font-size: .78rem; letter-spacing: .14em; text-transform: uppercase; color: var(--gold); font-weight: 700; }
+.lede { font-family: var(--serif); font-size: 1.15rem; color: var(--muted); max-width: 60ch; }
+.mock-note { background: var(--panel); border-bottom: 1px solid var(--line); color: var(--muted); font-size: .85rem; text-align: center; padding: 6px 16px; }
+
+/* Header */
+.site-head { background: var(--blue-deep); color: var(--on-blue); position: sticky; top: env(safe-area-inset-top, 0px); z-index: 10; }
+.site-head .wrap { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding-block: 12px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 12px; color: var(--on-blue); text-decoration: none; }
+.brand svg { width: 40px; height: 40px; flex: none; }
+.brand-name { font-family: var(--display); font-size: 1.25rem; line-height: 1.1; }
+.brand-sub { display: block; font-family: var(--sans); font-size: .72rem; letter-spacing: .12em; text-transform: uppercase; color: var(--on-blue-muted); }
+nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; flex-wrap: wrap; align-items: center; }
+nav a { color: var(--on-blue); text-decoration: none; font-size: .95rem; }
+nav a:hover { text-decoration: underline; text-underline-offset: 4px; }
+.btn { display: inline-block; font-family: var(--sans); font-weight: 700; font-size: 1rem; padding: 12px 22px; border-radius: 4px; text-decoration: none; border: 2px solid transparent; cursor: pointer; }
+.btn-gold { background: var(--gold); color: #1a1406; }
+.btn-gold:hover { filter: brightness(1.08); }
+.btn-ghost { border-color: var(--on-blue-muted); color: var(--on-blue); background: transparent; }
+.btn-ghost:hover { border-color: var(--on-blue); }
+nav .btn { padding: 8px 16px; font-size: .92rem; }
+
+/* Hero */
+.hero { background: var(--blue); background: linear-gradient(160deg, var(--blue-deep), #1F3A68); color: var(--on-blue); }
+.hero .wrap { display: grid; grid-template-columns: 1.3fr 1fr; gap: 48px; align-items: center; padding-block: 72px; }
+.hero h1 { font-size: clamp(2.6rem, 6vw, 4.2rem); color: var(--on-blue); }
+.hero p { font-family: var(--serif); font-size: 1.2rem; color: var(--on-blue-muted); margin-top: 20px; max-width: 46ch; }
+.hero .actions { display: flex; gap: 14px; flex-wrap: wrap; margin-top: 32px; }
+.hero-photo { aspect-ratio: 4/3; max-width: 100%; border: 1px solid rgba(255,255,255,.25); border-radius: 4px; display: grid; place-items: center; text-align: center; padding: 20px; color: var(--on-blue-muted); font-size: .9rem; background: repeating-linear-gradient(135deg, rgba(255,255,255,.04) 0 12px, rgba(255,255,255,.08) 12px 24px); }
+
+section { padding-block: 80px; }
+.section-head { display: grid; gap: 12px; margin-bottom: 40px; }
+
+/* What it is */
+.truths { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px; }
+.truth { border-top: 2px solid var(--gold); padding-top: 18px; display: grid; gap: 8px; min-width: 0; }
+.truth p { color: var(--muted); }
+
+/* Path */
+.path-section { background: var(--panel); }
+.steps { list-style: none; padding: 0; margin: 0; display: grid; grid-template-columns: repeat(5, 1fr); gap: 20px; counter-reset: step; }
+.steps li { counter-increment: step; display: grid; gap: 8px; align-content: start; min-width: 0; }
+.steps li::before { content: counter(step); font-family: var(--display); font-size: 2.4rem; color: var(--blue); line-height: 1; }
+.steps p { color: var(--muted); font-size: .98rem; }
+.degrees { font-family: var(--serif); font-style: italic; }
+
+/* Eligibility */
+.split { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
+.checklist { list-style: none; padding: 0; margin: 0; display: grid; gap: 14px; }
+.checklist li { display: grid; grid-template-columns: 28px 1fr; gap: 10px; }
+.checklist li::before { content: "✓"; color: var(--gold); font-weight: 700; font-size: 1.2rem; }
+.ask { background: var(--blue-deep); color: var(--on-blue); padding: 32px; border-radius: 4px; display: grid; gap: 14px; }
+.ask h3 { font-family: var(--display); font-weight: 400; font-size: 1.8rem; }
+.ask p { color: var(--on-blue-muted); }
+.ask .motto { font-family: var(--serif); font-style: italic; color: var(--gold); font-size: 1.15rem; }
+
+/* Community */
+.community { display: grid; grid-template-columns: repeat(4, 1fr); gap: 24px; }
+.item { display: grid; gap: 10px; align-content: start; min-width: 0; }
+.photo { aspect-ratio: 4/3; max-width: 100%; background: var(--panel); border: 1px dashed var(--line); border-radius: 4px; display: grid; place-items: center; color: var(--muted); font-size: .8rem; text-align: center; padding: 10px; }
+.item p { color: var(--muted); font-size: .98rem; }
+
+/* FAQ */
+.faq-section { background: var(--panel); }
+.faq { display: grid; gap: 0; max-width: 780px; }
+details { border-bottom: 1px solid var(--line); padding-block: 18px; }
+summary { cursor: pointer; font-weight: 600; font-size: 1.08rem; list-style: none; display: flex; justify-content: space-between; gap: 16px; }
+summary::-webkit-details-marker { display: none; }
+summary::after { content: "+"; color: var(--gold); font-size: 1.4rem; line-height: 1; }
+details[open] summary::after { content: "–"; }
+details p { color: var(--muted); margin-top: 10px; max-width: 65ch; }
+
+/* Visit + contact */
+.visit-list { list-style: none; padding: 0; margin: 0; display: grid; gap: 16px; }
+.visit-list strong { display: block; }
+.visit-list span { color: var(--muted); }
+.address { font-family: var(--serif); font-size: 1.1rem; margin-top: 24px; }
+form { display: grid; gap: 16px; background: var(--ground); border: 1px solid var(--line); padding: 28px; border-radius: 4px; }
+label { font-weight: 600; font-size: .95rem; display: grid; gap: 6px; }
+label .opt { font-weight: 400; color: var(--muted); }
+input, textarea { font: inherit; font-size: 1rem; padding: 10px 12px; border: 1px solid var(--line); border-radius: 4px; background: var(--panel); color: var(--ink); width: 100%; }
+textarea { min-height: 120px; resize: vertical; }
+.hp { position: absolute; left: -9999px; }
+.btn-blue { background: var(--blue); color: var(--ground); }
+.form-status { font-size: .95rem; color: var(--muted); }
+.privacy { font-size: .85rem; color: var(--muted); }
+
+footer { background: var(--blue-deep); color: var(--on-blue-muted); font-size: .92rem; }
+footer .wrap { display: flex; justify-content: space-between; gap: 20px; flex-wrap: wrap; padding-block: 32px; }
+footer a { color: var(--on-blue); }
+
+@media (max-width: 900px) {
+  .hero .wrap, .split { grid-template-columns: 1fr; gap: 36px; }
+  .steps { grid-template-columns: 1fr 1fr; }
+  .community { grid-template-columns: 1fr 1fr; }
+  .truths { grid-template-columns: 1fr; }
+}
+@media (max-width: 560px) {
+  nav ul { gap: 14px; }
+  nav li.hide-sm { display: none; }
+  .steps, .community { grid-template-columns: 1fr; }
+  section { padding-block: 56px; }
+  .hero .wrap { padding-block: 48px; }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .btn, summary::after { transition: filter .2s, border-color .2s; }
+}
+</style>
+
+<header class="site-head">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="Farmington Lodge No. 151 home">
+      <svg viewBox="0 0 64 64" aria-hidden="true" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M32 6 L12 50" /><path d="M32 6 L52 50" />
+        <circle cx="32" cy="8" r="3" fill="currentColor" stroke="none" />
+        <path d="M10 34 L32 54 L54 34" stroke="#A8843F" />
+      </svg>
+      <span><span class="brand-name">Farmington Lodge No. 151</span><span class="brand-sub">Free &amp; Accepted Masons</span></span>
+    </a>
+    <nav aria-label="Main">
+      <ul>
+        <li class="hide-sm"><a href="#about">About</a></li>
+        <li class="hide-sm"><a href="#join">Joining</a></li>
+        <li class="hide-sm"><a href="#community">Community</a></li>
+        <li class="hide-sm"><a href="#faq">FAQ</a></li>
+        <li><a class="btn btn-gold" href="#contact">Ask About Membership</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+  <div class="hero">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow">{{hero.eyebrow}}</p>
+        <h1>{{hero.heading}}</h1>
+        <p>{{hero.text}}</p>
+        <div class="actions">
+          <a class="btn btn-gold" href="#contact">Ask About Membership</a>
+          <a class="btn btn-ghost" href="#visit">Come Meet Us</a>
+        </div>
+      </div>
+      {{img hero.photo hero-photo}}
+    </div>
+  </div>
+
+  <section id="about">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">What is Freemasonry?</p>
+        <h2>The world’s oldest fraternity, in plain terms</h2>
+        <p class="lede">Freemasonry teaches moral lessons through allegory and symbolism, builds lasting friendships, and puts its members to work for others. Here is what it isn’t.</p>
+      </div>
+      <div class="truths">
+        {{#each truths}}<div class="truth"><h3>{{title}}</h3><p>{{text}}</p></div>
+        {{/each}}</div>
+    </div>
+  </section>
+
+  <section class="path-section" id="join">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">The path to membership</p>
+        <h2>Masons don’t recruit. You have to ask.</h2>
+        <p class="lede">That’s a tradition, not a barrier. Here is what happens after you do.</p>
+      </div>
+      <ol class="steps">
+        <li><h3>Reach out</h3><p>Send us a note or find us at a public event. Ask whatever you like.</p></li>
+        <li><h3>Get to know us</h3><p>Join us for dinner or a community event. Membership is a long commitment, so it should be a good fit on both sides.</p></li>
+        <li><h3>Petition</h3><p>When you’re ready, you complete a petition recommended by members of the lodge.</p></li>
+        <li><h3>Visit and ballot</h3><p>A few members meet with you, usually at home, to answer questions. The lodge then votes.</p></li>
+        <li><h3>The three degrees</h3><p class="degrees">Entered Apprentice, Fellowcraft, Master Mason.</p><p>A mentor walks with you through each one.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap split">
+      <div class="section-head" style="margin-bottom:0">
+        <p class="eyebrow">Is it for me?</p>
+        <h2>Who can petition in Michigan</h2>
+        <ul class="checklist" style="margin-top:20px">
+          {{#each eligibility}}<li>{{text}}</li>
+          {{/each}}</ul>
+      </div>
+      <aside class="ask">
+        <p class="motto">To be one, ask one.</p>
+        <h3>Consider this your invitation to ask.</h3>
+        <p>There’s no obligation in a conversation. Tell us a little about yourself and a member of the lodge will get in touch.</p>
+        <a class="btn btn-gold" href="#contact" style="justify-self:start">Ask About Membership</a>
+      </aside>
+    </div>
+  </section>
+
+  <section id="community" style="padding-top:0">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">In Farmington</p>
+        <h2>A living lodge in a living town</h2>
+      </div>
+      <div class="community">
+        {{#each community}}<div class="item">{{img photo photo}}<h3>{{title}}</h3><p>{{text}}</p></div>
+        {{/each}}</div>
+    </div>
+  </section>
+
+  <section class="faq-section" id="faq">
+    <div class="wrap">
+      <div class="section-head">
+        <p class="eyebrow">Questions people hesitate to ask</p>
+        <h2>Frequently asked</h2>
+      </div>
+      <div class="faq">
+        {{#each faq}}<details><summary>{{question}}</summary><p>{{answer}}</p></details>
+        {{/each}}</div>
+    </div>
+  </section>
+
+  <section id="visit">
+    <div class="wrap split">
+      <div class="section-head" style="margin-bottom:0">
+        <p class="eyebrow">Your first visit</p>
+        <h2>What to expect</h2>
+        <ul class="visit-list" style="margin-top:20px">
+          {{#each visit}}<li><strong>{{label}}</strong><span>{{text}}</span></li>
+          {{/each}}</ul>
+        <p class="address">{{address.street}}<br>{{address.city}}</p>
+      </div>
+      <div id="contact">
+        <form id="inquiry" novalidate data-endpoint="{{contact.endpoint}}">
+          <h3 style="font-family:var(--display);font-weight:400;font-size:1.7rem">Ask About Membership</h3>
+          <label for="f-name">Name<input id="f-name" name="name" autocomplete="name"></label>
+          <label for="f-email">Email<input id="f-email" name="email" type="email" autocomplete="email"></label>
+          <label for="f-phone">Phone <span class="opt">(optional)</span><input id="f-phone" name="phone" type="tel" autocomplete="tel"></label>
+          <label for="f-msg">Your question<textarea id="f-msg" name="message"></textarea></label>
+          <label class="hp" for="f-website">Leave this empty<input id="f-website" name="website" tabindex="-1" autocomplete="off"></label>
+          <button class="btn btn-blue" type="submit" style="justify-self:start">Send question</button>
+          <p class="form-status" id="status" role="status"></p>
+          <p class="privacy">{{contact.privacy}} We don’t share it or add you to any list.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <span>Farmington Lodge No. 151, F. &amp; A. M. · Under the jurisdiction of the Grand Lodge of Michigan</span>
+    <a href="https://michiganmasons.org" target="_blank" rel="noopener">Grand Lodge of Michigan ↗</a>
+  </div>
+</footer>
+
+<script>
+document.getElementById('inquiry').addEventListener('submit', async function (e) {
+  e.preventDefault();
+  var f = e.target, status = document.getElementById('status'), url = f.dataset.endpoint;
+  if (f.website.value) return;
+  if (!url) { status.textContent = 'This form isn’t connected yet, so nothing was sent.'; return; }
+  status.textContent = 'Sending…';
+  try {
+    var r = await fetch(url, { method: 'POST', headers: { Accept: 'application/json' }, body: new FormData(f) });
+    status.textContent = r.ok ? 'Thank you. A member of the lodge will be in touch.' : 'Something went wrong. Please try again.';
+    if (r.ok) f.reset();
+  } catch (_) { status.textContent = 'Something went wrong. Please try again.'; }
+});
+</script>
+
+</body></html>

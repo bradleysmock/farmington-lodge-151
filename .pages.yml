@@ -1,0 +1,71 @@
+# Pages CMS configuration: https://pagescms.org/docs/configuration/
+# Everything an editor sees in the admin UI is defined here. Anything not listed
+# (layout, colours, the "path to membership" steps) can only be changed in the code.
+media:
+  input: media
+  output: /media
+  extensions: [jpg, jpeg, png, webp]
+
+content:
+  - name: site
+    label: Lodge website
+    type: file
+    path: content/site.json
+    format: json
+    fields:
+      - name: hero
+        label: Top of the page
+        type: object
+        fields:
+          - { name: eyebrow, label: Small heading above the title, type: string }
+          - { name: heading, label: Main title, type: string }
+          - { name: text, label: Intro paragraph, type: text }
+          - { name: photo, label: Photo, type: image }
+      - name: visit
+        label: First visit details
+        description: When, what to wear, and so on.
+        type: object
+        list: true
+        fields:
+          - { name: label, label: Heading, type: string }
+          - { name: text, label: Details, type: text }
+      - name: address
+        label: Lodge address
+        type: object
+        fields:
+          - { name: street, label: Street, type: string }
+          - { name: city, label: "City, state and ZIP", type: string }
+      - name: faq
+        label: Frequently asked questions
+        type: object
+        list: true
+        fields:
+          - { name: question, label: Question, type: string }
+          - { name: answer, label: Answer, type: text }
+      - name: community
+        label: Community activities
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Short description, type: text }
+          - { name: photo, label: Photo, type: image }
+      - name: eligibility
+        label: Who can petition
+        type: object
+        list: true
+        fields:
+          - { name: text, label: Requirement, type: string }
+      - name: truths
+        label: "What Freemasonry is not"
+        type: object
+        list: true
+        fields:
+          - { name: title, label: Title, type: string }
+          - { name: text, label: Explanation, type: text }
+      - name: contact
+        label: Contact form
+        type: object
+        fields:
+          - { name: endpoint, label: Form service URL, description: "Set once by whoever manages the site. Leave alone otherwise.", type: string }
+          - { name: privacy, label: Privacy note, type: text }
