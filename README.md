@@ -8,7 +8,6 @@
 | `template.html` | Layout and styling. Developer-only. |
 | `build.mjs` | Fills the template from `site.json` into `dist/index.html`. |
 | `.github/workflows/deploy.yml` | Builds and publishes to GitHub Pages on every push to `main`. |
-| `admin-preview.html` | Static illustration of the editing screen. Not part of the site. |
 
 ## Local preview
     node build.mjs && open dist/index.html
